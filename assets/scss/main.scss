@@ -1,0 +1,11 @@
+// Import bulma
+@import "~bulma";
+// Import Bulma's helpers
+@import '../../node_modules/bulma-helpers/css/bulma-helpers.min.css';
+
+// Animate css
+// @import '../../node_modules/animate.css/animate.css';
+
+// My settings
+@import 'base/animations';
+@import 'base/layout';

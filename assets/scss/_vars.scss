@@ -1,0 +1,66 @@
+// Note this file does not need to imported,
+// it is usable in components, because of @nuxtjs/style-resources
+
+// Import Bulma's core, so I can access these
+@import "~bulma/sass/utilities/_all";
+
+// Colors
+$color-almond: #FFEAC5;
+$color-green: #01CC88;
+$color-blue: #4099FF;
+
+$color-primary: #ffb129;
+$color-secondary: #242526;
+$color-secondary-dark: #18191a;
+$color-secondary-light: #3a3b3c;
+
+$color-text-primary: #e4e6eb;
+$color-text-primary-darker: #b0b3b8;
+
+$primary: $color-primary;
+$primary-invert: findColorInvert($primary);
+$secondary: $color-secondary;
+$secondary-invert: findColorInvert($secondary);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+  "white": ($white, $black),
+  "black": ($black, $white),
+  "light": ($light, $light-invert),
+  "dark": ($dark, $dark-invert),
+  "primary": ($primary, $primary-invert),
+  "secondary": ($secondary, $secondary-invert),
+  "info": ($info, $info-invert),
+  "success": ($success, $success-invert),
+  "warning": ($warning, $warning-invert),
+  "danger": ($danger, $danger-invert)
+);
+
+// Links
+$link: $color-blue;
+/*$link: $primary-dark;
+$link-invert: $primary-invert;
+$link-focus-border: $primary-dark;*/
+
+$size-1: 4.5rem;
+
+$subtitle-color: $color-text-primary-darker;
+
+$family-sans-serif: 'Poppins', sans-serif;
+
+$body-family: $family-sans-serif;
+$body-line-height: 160%;
+$body-background-color: $color-secondary-dark;
+$body-color: $color-text-primary-darker;
+
+$text: $color-text-primary-darker;
+
+$title-color: $color-text-primary;
+$title-weight: $weight-medium;
+
+
+$link-hover: $color-primary;
+
+$text-strong: $color-text-primary-darker;
+
+$card-background-color: $color-secondary;

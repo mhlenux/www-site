@@ -1,0 +1,59 @@
+/*! purgecss start ignore */
+
+.page-enter-active, .page-leave-active,
+.layout-enter-active, .layout-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+}
+.page-enter, .page-leave-to,
+.layout-enter, .layout-leave-to{
+  opacity: 0;
+}
+
+@keyframes fillHorizontal {
+  0%{
+    transform-origin: left;
+    transform:scaleX(0)
+  }
+  100%{
+    transform:scaleX(1)
+  }
+}
+@keyframes fadeInUp {
+  0%{
+    opacity:0;
+    transform: translateY(25px);
+  }
+  100%{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  0%{
+    opacity:0;
+    transform: translateY(-25px);
+  }
+  100%{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+@keyframes fadeOut {
+  0%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+  }
+}
+/*! purgecss end ignore */

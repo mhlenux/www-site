@@ -1,0 +1,42 @@
+.title-divider {
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background-color: $color-primary;
+}
+
+/*! purgecss start ignore */
+.content code,
+code {
+  color: $color-text-primary !important;
+  background: $color-secondary-light;
+  padding: 1px 5px;
+  border-radius: 10px;
+  font-size: .9em;
+}
+.content pre,
+pre {
+  background: $color-secondary-light;
+  padding: 20px;
+  overflow-x: auto;
+  border-radius: 20px;
+
+  code {
+    background: transparent;
+    color: $color-text-primary !important;
+    border: none;
+    padding: 0;
+  }
+}
+.content blockquote,
+blockquote{
+  border: 1px solid #eee;
+  border-left: 4px solid $primary;
+  padding: 10px;
+}
+.content dt,
+dt {
+  font-weight: bold;
+}
+
+/*! purgecss end ignore */

@@ -1,0 +1,22 @@
+export default {
+  // Site main
+  siteName: '',
+  myName: '',
+  fullUrl: '',
+  tagLine: '',
+  googleAnalytics: '',
+  disqus: '',
+  layoutCommon: {
+    footerText: ''
+  },
+  socialLinks: {
+    email: '',
+    instagram: '',
+    linked: '',
+    github: ''
+  },
+  content: {
+    hero: [],
+    about: []
+  }
+}
