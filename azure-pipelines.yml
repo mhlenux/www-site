@@ -12,9 +12,19 @@ pool:
 steps:
   - checkout: self
     submodules: true
+  - task: DownloadSecureFile@1
+    name: sitefile
+    displayName: 'Download site.js'
+    inputs:
+      secureFile: 'site.js'
+  - task: CopyFiles@2
+    inputs:
+      SourceFolder: '$(Agent.TempDirectory)'
+      Contents: 'site.js'
+      TargetFolder: '$(System.DefaultWorkingDirectory)/config'
   - task: AzureStaticWebApp@0
     inputs:
       app_location: '/'
-#      api_location: 'api'
+      app_build_command: 'npm run generate'
       output_location: '/dist'
-      azure_static_web_apps_api_token: $(deployment_token)
+      azure_static_web_apps_api_token: '$(deployment_token)'
